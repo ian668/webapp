@@ -1,0 +1,50 @@
+//导航侧边栏
+
+
+.navSideBar {
+  position: relative;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.navSideBar .am-drawer-sidebar {
+  background-color: #fff;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+
+  .sideGameList{
+    padding: 10px 15px 15px;
+    background: #fff;
+    width: 280px;
+
+    .box{
+      display: block;
+      width: 100%;
+      background-color: #fff;
+
+      .title{
+        line-height: 40px;
+        border-bottom: 0.5px solid #e5e5e5;
+        padding-left: 5px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      li{
+        width: 33.33%;
+        display: inline-block;
+        text-align: center;
+        padding: 10px 0;
+
+        img{
+          width: 56px;
+        }
+
+        p{
+          font-size: 12px;
+          line-height: 32px;
+          color: #333;
+        }
+      }
+    }
+  }
+}
