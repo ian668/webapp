@@ -2,9 +2,10 @@
 
 
 .navSideBar {
-  position: relative;
+  position: absolute;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
+  height: 100%;
 }
 .navSideBar .am-drawer-sidebar {
   background-color: #fff;

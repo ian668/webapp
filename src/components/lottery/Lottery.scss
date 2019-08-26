@@ -10,548 +10,553 @@
     font-size: 13px;
   }
 
-  .openLottery{
-    background: #fff;
-    padding: 10px 15px;
+  .contentBox{
+    margin-bottom: 130px;
 
-    .time{
-      width: 40%;
-      display: inline-block;
 
-      .title{
-        font-size: 12px;
+    .openLottery{
+      background: #fff;
+      padding: 10px 15px;
 
-        span{
-          color: #ea4040;
-          padding: 0 3px;
-        }
-      }
+      .time{
+        width: 40%;
+        display: inline-block;
 
-      .lastTime{
-        line-height: 24px;
+        .title{
+          font-size: 12px;
 
-        span{
-          text-align: center;
-          background: #333;
-          border-radius:3px;
-          display: inline-block;
-          color: #fff;
-          font-size: 13px;
-          width:20px;
-          margin: 10px 3px 0;
-        }
-
-        span:first-child{
-          margin-left: 0;
-        }
-      }
-    }
-
-    .openWins{
-      width: 60%;
-      display: inline-block;
-      text-align: right;
-      vertical-align: top;
-
-      .title{
-        font-size: 12px;
-
-        span{
-          color: #ea4040;
-          padding: 0 3px;
-        }
-      }
-
-      .openNub{
-
-        .ssc{
           span{
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            background: #ea4040;
-            display: inline-block;
+            color: #ea4040;
+            padding: 0 3px;
+          }
+        }
+
+        .lastTime{
+          line-height: 24px;
+
+          span{
             text-align: center;
-            line-height: 24px;
+            background: #333;
+            border-radius:3px;
+            display: inline-block;
             color: #fff;
             font-size: 13px;
+            width:20px;
             margin: 10px 3px 0;
           }
 
-          span:last-child{
-            margin-right: 0;
+          span:first-child{
+            margin-left: 0;
+          }
+        }
+      }
+
+      .openWins{
+        width: 60%;
+        display: inline-block;
+        text-align: right;
+        vertical-align: top;
+
+        .title{
+          font-size: 12px;
+
+          span{
+            color: #ea4040;
+            padding: 0 3px;
+          }
+        }
+
+        .openNub{
+
+          .ssc{
+            span{
+              width: 24px;
+              height: 24px;
+              border-radius: 50%;
+              background: #ea4040;
+              display: inline-block;
+              text-align: center;
+              line-height: 24px;
+              color: #fff;
+              font-size: 13px;
+              margin: 10px 3px 0;
+            }
+
+            span:last-child{
+              margin-right: 0;
+            }
           }
         }
       }
     }
-  }
 
-  .gameDescription{
-    background: #fff;
-    line-height: 30px;
-    padding: 8px 15px 0px ;
-    font-size: 12px;
+    .gameDescription{
+      background: #fff;
+      line-height: 30px;
+      padding: 8px 15px 0px ;
+      font-size: 12px;
 
-    .left{
-      display: inline-block;
-
-      .icon{
-        width: 16px;
-        height: 16px;
-        background: #f1f1f1;
+      .left{
         display: inline-block;
-        vertical-align: middle;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-        margin-right: 6px;
+
+        .icon{
+          width: 16px;
+          height: 16px;
+          background: #f1f1f1;
+          display: inline-block;
+          vertical-align: middle;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          margin-right: 6px;
+        }
       }
+
+      .right{
+        float: right;
+
+        .nub{
+          color: #ea4040;
+          margin: 0 5px;
+        }
+      }
+
     }
-    
-    .right{
-      float: right;
+
+
+    .my-accordion{
+
+      .am-accordion-header{
+        font-size: 12px;
+        height: 28px;
+        line-height: 28px;
+
+        i{
+          width: 10px;
+          height: 10px;
+          top:7px;
+        }
+      }
+
+      .am-list-item{
+        min-height: 32px;
+        padding: 0;
+      }
+
+      .title{
+        div{
+          color: #333;
+        }
+      }
+
+      .am-list-item:nth-child(even){
+        background: #f9f9f9;
+      }
+
+      .am-flexbox-item{
+        font-size: 12px;
+        text-align: center;
+        color: #666;
+      }
 
       .nub{
         color: #ea4040;
-        margin: 0 5px;
+        letter-spacing:3px;
       }
     }
 
-  }
-
-
-  .my-accordion{
-
-    .am-accordion-header{
-      font-size: 12px;
-      height: 28px;
-      line-height: 28px;
-
-      i{
-        width: 10px;
-        height: 10px;
-        top:7px;
-      }
-    }
-
-    .am-list-item{
-      min-height: 32px;
-      padding: 0;
-    }
-    
-    .title{
-      div{
-        color: #333;
-      }
-    }
-
-    .am-list-item:nth-child(even){
-      background: #f9f9f9;
-    }
-
-    .am-flexbox-item{
-      font-size: 12px;
-      text-align: center;
-      color: #666;
-    }
-
-    .nub{
-      color: #ea4040;
-      letter-spacing:3px;
-    }
-  }
-
-  .gameSelection{
-    background: #fff;
-    margin-top: 8px;
-    padding: 10px 50px 10px 15px;
-    position: relative;
-    //box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
-    border-bottom: 0.5px solid #e5e5e5;
-
-    .content{
-      width: 100%;
-      overflow-x: auto;
-
-      ul{
-        width: 700px;
-        padding: 0;
-        margin: 0;
-
-        li{
-          display: inline-block;
-          text-align: center;
-          padding: 0 8px;
-          border:1px solid #eee;
-          line-height: 30px;
-          margin-right: 6px;
-          border-radius: 30px;
-          font-size: 12px;
-          color: #333;
-
-        }
-        
-        li.active{
-          border-color: #ea4040;
-          color: #ea4040;
-        }
-      }
-    }
-
-    .addBtn{
-      position: absolute;
-      right: 15px;
-      top: 16px;
-      
-      span{
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background: #ccc;
-        display: block;
-      }
-    }
-  }
-
-  .contentSelection{
-    background: #fff;
-
-    .contentBox{
-      padding: 10px 0;
+    .gameSelectionBox{
+      background: #fff;
+      margin-top: 8px;
+      padding: 10px 50px 10px 15px;
+      position: relative;
+      //box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
       border-bottom: 0.5px solid #e5e5e5;
 
-      .titleBox{
-
-        .title{
-          display: inline-block;
-
-          span{
-            background: #f5f5f5;
-            padding: 5px 15px;
-            color: #333;
-            border-top-right-radius: 30px;
-            border-bottom-right-radius: 30px;
-            display: block;
-            margin: 7px 0;
-          }
-        }
-
-        .btns{
-          float: right;
-          padding-right: 10px;
-
-          span{
-            display: inline-block;
-            padding: 12px;
-            color: #333;
-          }
-        }
-
-        .btnType2{
-          float: right;
-          padding-right: 15px;
-          margin: 6px 0;
-
-          .btn{
-            display: inline-block;
-            padding: 6px 10px;
-            color: #333;
-            border-radius: 3px;
-            font-size: 13px;
-            margin-left: 8px;
-            background: #f1f1f1;
-          }
-        }
-      }
-
-      .position{
-        padding: 8px 15px;
-        text-align: center;
-
-        span{
-          padding: 6px 10px;
-          border: 1px solid #eee;
-          margin-right: 8px;
-          font-size: 13px;
-          display: inline-block;
-          border-radius: 3px;
-        }
-
-        span.active{
-          border-color: #ea4040;
-          color: #ea4040;
-        }
-      }
-
-      .teatArea{
-        margin: 5px 15px;
-        padding: 10px;
-        height: 80px;
-        font-size: 13px;
-        color: #ccc;
-        background: #f5f5f5;
-        border-radius: 3px;
-        line-height: 20px;
-      }
-
-
-      .ball{
+      .gameSelection{
+        width: 100%;
+        overflow-x: auto;
 
         ul{
+          width: 700px;
+          padding: 0;
+          margin: 0;
 
           li{
             display: inline-block;
-            width: 20%;
-            margin: 6px 0;
             text-align: center;
+            padding: 0 8px;
+            border:1px solid #eee;
+            line-height: 30px;
+            margin-right: 6px;
+            border-radius: 30px;
+            font-size: 12px;
+            color: #333;
 
-            span{
-              background: linear-gradient(45deg, #e5e5e5, white);
-              width: 44px;
-              height: 44px;
-              line-height: 44px;
-              border-radius: 50%;
-              display: inline-block;
-              border: 1px solid #e5e5e5;
-              font-size: 18px;
-            }
-
-            span.active{
-              background: #ea4040;
-              border: 1px solid #ea4040;
-              color: #fff;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .bonusBox{
-    background: #fff;
-    padding: 15px 0 10px;
-
-    .bonus{
-      padding: 0 15px;
-
-      .title{
-        line-height: 30px;
-      }
-
-      .left{
-        font-size: 12px;
-        display: inline-block;
-
-        .Btns{
-          background: #f5f5f5;
-          padding: 0 5px;
-          border-radius: 30px;
-          overflow: hidden;
-          display: inline-block;
-          vertical-align: middle;
-          margin-left: 8px;
-
-          input{
-            text-align: center;
-            width: 50px;
-            background: #f5f5f5;
-            border: none;
-            height: 30px;
-            -webkit-user-select: auto;
           }
 
-          span{
-            background: #ea4040;
-            color: #fff;
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            line-height: 20px;
-            display: inline-block;
-            text-align: center;
+          li.active{
+            border-color: #ea4040;
+            color: #ea4040;
           }
         }
       }
 
-      .right{
-        float: right;
-
-        span{
-          line-height: 28px;
-          margin: 1px 0;
-          width: 34px;
-          background: #f5f5f5;
-          display: inline-block;
-          font-size: 12px;
-          text-align: center;
-          margin-left: 4px;
-          -webkit-border-radius: 3px;
-          -moz-border-radius: 3px;
-          border-radius: 3px;
-        }
-        
-        span.active{
-          background: #ea4040;
-          color: #fff;
-        }
-      }
-    }
-
-    .sliderBox{
-      padding: 15px;
-      margin: 10px 0 0;
-      position: relative;
-
-      .slider{
-
-        .am-slider-track{
-          background-color: #ea4040;
-        }
-
-        .am-slider-handle{
-          border: 2px solid #ea4040;
-        }
-
-      }
-
-      .title{
-        position: absolute;
-        left: 15px;
-        top: 0;
-        width: 30px;
-        line-height: 30px;
-        font-size: 12px;
-      }
-
-      .nub{
+      .addBtn{
         position: absolute;
         right: 15px;
-        top: 0;
-        width: 40px;
-        line-height: 30px;
-        font-size: 12px;
-      }
-    }
-  }
+        top: 16px;
 
-  .betFooter{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: #fff;
-    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
-
-    .payment{
-      line-height: 30px;
-      font-size: 12px;
-      padding: 2px 15px;
-
-      .left{
-        display: inline-block;
-
-        .btn{
-          color: #333;
-          margin-left: 10px;
-          background: #f5f5f5;
-          padding: 3px 5px;
-          border-radius: 3px;
+        span{
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: #ccc;
+          display: block;
         }
       }
-
-      .right{
-        float: right;
-      }
-
-      .nub{
-        color: #ea4040;
-        padding: 0 5px;
-      }
     }
 
-    .betBtns{
-      box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
-      border-top: 0.5px solid #eee;
-      padding: 8px 0 8px;
-      position: relative;
+    .contentSelectionBox{
+      background: #fff;
 
-      .left{
-        position: absolute;
+      .contentSelection{
+        padding: 10px 0;
+        border-bottom: 0.5px solid #e5e5e5;
 
-        .btn{
-          text-align: center;
-          display: inline-block;
-          width: 68px;
-          border-right: 0.5px solid #eee;
-          position: relative;
+        .titleBox{
 
-          .icon{
-            width: 24px;
-            height: 24px;
-            background: #f1f1f1;
+          .title{
             display: inline-block;
-            vertical-align: middle;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            border-radius: 50%;
+
+            span{
+              background: #f5f5f5;
+              padding: 5px 15px;
+              color: #333;
+              border-top-right-radius: 30px;
+              border-bottom-right-radius: 30px;
+              display: block;
+              margin: 7px 0;
+            }
           }
 
-          .name{
-            font-size: 12px;
-            color: #666;
-            margin-top: 3px;
-            transform: scale(.9);
+          .btns{
+            float: right;
+            padding-right: 10px;
+
+            span{
+              display: inline-block;
+              padding: 12px;
+              color: #333;
+            }
           }
+
+          .btnType2{
+            float: right;
+            padding-right: 15px;
+            margin: 6px 0;
+
+            .btn{
+              display: inline-block;
+              padding: 6px 10px;
+              color: #333;
+              border-radius: 3px;
+              font-size: 13px;
+              margin-left: 8px;
+              background: #f1f1f1;
+            }
+          }
+        }
+
+        .position{
+          padding: 8px 15px;
+          text-align: center;
 
           span{
-            min-width: 16px;
-            height: 16px;
-            background: #ea4040;
-            position: absolute;
-            top: 0;
-            right: 16px;
-            color: #fff;
-            font-size: 12px;
-            line-height: 16px;
-            text-align: center;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            border-radius: 50%;
-            transform: scale(.8);
+            padding: 6px 10px;
+            border: 1px solid #eee;
+            margin-right: 8px;
+            font-size: 13px;
+            display: inline-block;
+            border-radius: 3px;
+          }
+
+          span.active{
+            border-color: #ea4040;
+            color: #ea4040;
           }
         }
 
-        .btn:last-child{
-          border-right: 0;
+        .teatArea{
+          margin: 5px 15px;
+          padding: 10px;
+          height: 80px;
+          font-size: 13px;
+          color: #ccc;
+          background: #f5f5f5;
+          border-radius: 3px;
+          line-height: 20px;
+        }
+
+
+        .ball{
+
+          ul{
+
+            li{
+              display: inline-block;
+              width: 20%;
+              margin: 6px 0;
+              text-align: center;
+
+              span{
+                background: linear-gradient(45deg, #e5e5e5, white);
+                width: 44px;
+                height: 44px;
+                line-height: 44px;
+                border-radius: 50%;
+                display: inline-block;
+                border: 1px solid #e5e5e5;
+                font-size: 18px;
+              }
+
+              span.active{
+                background: #ea4040;
+                border: 1px solid #ea4040;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .bonusBox{
+      background: #fff;
+      padding: 15px 0 10px;
+
+      .bonus{
+        padding: 0 15px;
+
+        .title{
+          line-height: 30px;
+        }
+
+        .left{
+          font-size: 12px;
+          display: inline-block;
+
+          .Btns{
+            background: #f5f5f5;
+            padding: 0 5px;
+            border-radius: 30px;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 8px;
+
+            input{
+              text-align: center;
+              width: 50px;
+              background: #f5f5f5;
+              border: none;
+              height: 30px;
+              -webkit-user-select: auto;
+            }
+
+            span{
+              background: #ea4040;
+              color: #fff;
+              border-radius: 50%;
+              width: 20px;
+              height: 20px;
+              line-height: 20px;
+              display: inline-block;
+              text-align: center;
+            }
+          }
+        }
+
+        .right{
+          float: right;
+
+          span{
+            line-height: 28px;
+            margin: 1px 0;
+            width: 34px;
+            background: #f5f5f5;
+            display: inline-block;
+            font-size: 12px;
+            text-align: center;
+            margin-left: 4px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+          }
+
+          span.active{
+            background: #ea4040;
+            color: #fff;
+          }
         }
       }
 
-      .right{
-        margin: 0 10px 0 160px;
-        text-align: right;
+      .sliderBox{
+        padding: 15px;
+        margin: 10px 0 0;
+        position: relative;
 
-        .btn{
+        .slider{
+
+          .am-slider-track{
+            background-color: #ea4040;
+          }
+
+          .am-slider-handle{
+            border: 2px solid #ea4040;
+          }
+
+        }
+
+        .title{
+          position: absolute;
+          left: 15px;
+          top: 0;
+          width: 30px;
+          line-height: 30px;
+          font-size: 12px;
+        }
+
+        .nub{
+          position: absolute;
+          right: 15px;
+          top: 0;
+          width: 40px;
+          line-height: 30px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .betFooter{
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #fff;
+      box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+
+      .payment{
+        line-height: 30px;
+        font-size: 12px;
+        padding: 2px 15px;
+
+        .left{
           display: inline-block;
-          line-height: 40px;
-          background: #ea4040;
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          text-align: center;
-          border-radius: 4px;
-          color: #fff;
-          margin-left: 5px;
-          font-size: 13px;
+
+          .btn{
+            color: #333;
+            margin-left: 10px;
+            background: #f5f5f5;
+            padding: 3px 5px;
+            border-radius: 3px;
+          }
         }
 
-        .btn:first-child{
-          margin-left: 0;
+        .right{
+          float: right;
         }
 
-        .zhuihao{
-          width: 30%;
+        .nub{
+          color: #ea4040;
+          padding: 0 5px;
+        }
+      }
+
+      .betBtns{
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+        border-top: 0.5px solid #eee;
+        padding: 10px 0;
+        position: relative;
+
+        .left{
+          position: absolute;
+
+          .btn{
+            text-align: center;
+            display: inline-block;
+            width: 68px;
+            border-right: 0.5px solid #eee;
+            position: relative;
+
+            .icon{
+              width: 24px;
+              height: 24px;
+              background: #f1f1f1;
+              display: inline-block;
+              vertical-align: middle;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              border-radius: 50%;
+            }
+
+            .name{
+              font-size: 12px;
+              color: #666;
+              margin-top: 3px;
+              transform: scale(.95);
+            }
+
+            span{
+              min-width: 16px;
+              height: 16px;
+              background: #ea4040;
+              position: absolute;
+              top: 0;
+              right: 16px;
+              color: #fff;
+              font-size: 12px;
+              line-height: 16px;
+              text-align: center;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              border-radius: 50%;
+              transform: scale(.8);
+            }
+          }
+
+          .btn:last-child{
+            border-right: 0;
+          }
         }
 
-        .fastBet{
-          width: 45%;
+        .right{
+          margin: 0 10px 0 160px;
+          text-align: right;
+
+          .btn{
+            display: inline-block;
+            line-height: 40px;
+            background: linear-gradient(45deg, #da3939, #f55b5b);
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            text-align: center;
+            border-radius: 4px;
+            color: #fff;
+            margin-left: 5px;
+            font-size: 13px;
+          }
+
+          .btn:first-child{
+            margin-left: 0;
+          }
+
+          .zhuihao{
+            width: 30%;
+          }
+
+          .fastBet{
+            width: 45%;
+          }
         }
       }
     }

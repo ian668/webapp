@@ -69,8 +69,8 @@ class Home extends Component {
                     open={this.state.open}
                     onOpenChange={this.onOpenChange}
                     position={'right'}
-                >
-                 <header>
+                />
+
                     <NavBar
                         mode="light"
                         leftContent={<img src={logo} alt="" className='logo'/>}
@@ -79,260 +79,261 @@ class Home extends Component {
                             <Icon key="1" type="ellipsis" onClick={this.onOpenChange}/>,
                         ]}
                     />
-                 </header>
-
-                {/*首页banner*/}
-
-                <div className='banner'>
-
-                    <WingBlank>
-                        <Carousel
-                            autoplay={false}
-                            infinite
-                            autoplay={true}
-                            // cellSpacing={10}
-                            // slideWidth={0.85}
-                            autoplayInterval={6000}
-                            beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
-                            afterChange={index => console.log('slide to', index)}
-                        >
-                            {this.state.data.map((val,index) => (
-                                <a
-                                    key={index}
-                                    style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
-                                >
-                                    <img
-                                        src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
-                                        alt=""
-                                        style={{ width: '100%', verticalAlign: 'top' }}
-                                        onLoad={() => {
-                                            // fire window resize event to change height
-                                            window.dispatchEvent(new Event('resize'));
-                                            this.setState({ imgHeight: 'auto' });
-                                        }}
-                                    />
-                                </a>
-                            ))}
-                        </Carousel>
-                    </WingBlank>
-
-                </div>
 
 
-                {/*滚动公告*/}
+                 <div className="contentBox">
 
-                <div className="rollingAnnounce">
-                    <Icon type="search" className='announceIcon'/>
-                    <div className="content">
+                    {/*首页banner*/}
+
+                    <div className='banner'>
+
                         <WingBlank>
-                            <Carousel className="my-carousel"
-                                      vertical
-                                      dots={false}
-                                      dragging={false}
-                                      swiping={false}
-                                      autoplay
-                                      infinite
+                            <Carousel
+                                autoplay={false}
+                                infinite
+                                autoplay={true}
+                                // cellSpacing={10}
+                                // slideWidth={0.85}
+                                autoplayInterval={6000}
+                                beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
+                                afterChange={index => console.log('slide to', index)}
                             >
-                                <div className="v-item">平台扫码充值通知</div>
-                                <div className="v-item">奖金封顶及单挑限额</div>
-                                <div className="v-item">关于腾讯分分彩重复开奖处理通知</div>
+                                {this.state.data.map((val,index) => (
+                                    <a
+                                        key={index}
+                                        style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
+                                    >
+                                        <img
+                                            src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
+                                            alt=""
+                                            style={{ width: '100%', verticalAlign: 'top' }}
+                                            onLoad={() => {
+                                                // fire window resize event to change height
+                                                window.dispatchEvent(new Event('resize'));
+                                                this.setState({ imgHeight: 'auto' });
+                                            }}
+                                        />
+                                    </a>
+                                ))}
                             </Carousel>
                         </WingBlank>
+
                     </div>
-                </div>
 
 
-                {/*账户信息*/}
+                    {/*滚动公告*/}
 
-                <div className="userInfo">
-
-                    <div className="content">
-
-                        <div className='user'>
-                            <span>下午好,</span>
-                            <span>bb5521</span>
-
-                            <span className='bankCard'>银行卡管理</span>
+                    <div className="rollingAnnounce">
+                        <Icon type="search" className='announceIcon'/>
+                        <div className="content">
+                            <WingBlank>
+                                <Carousel className="my-carousel"
+                                          vertical
+                                          dots={false}
+                                          dragging={false}
+                                          swiping={false}
+                                          autoplay
+                                          infinite
+                                >
+                                    <div className="v-item">平台扫码充值通知</div>
+                                    <div className="v-item">奖金封顶及单挑限额</div>
+                                    <div className="v-item">关于腾讯分分彩重复开奖处理通知</div>
+                                </Carousel>
+                            </WingBlank>
                         </div>
+                    </div>
 
-                        <div className="funds">
 
-                            <div className="money">
+                    {/*账户信息*/}
 
-                                <p>888.00</p>
-                                <span>余额</span>
+                    <div className="userInfo">
+
+                        <div className="content">
+
+                            <div className='user'>
+                                <span>下午好,</span>
+                                <span>bb5521</span>
+
+                                <span className='bankCard'>银行卡管理</span>
+                            </div>
+
+                            <div className="funds">
+
+                                <div className="money">
+
+                                    <p>888.00</p>
+                                    <span>余额</span>
+
+                                </div>
+
+                                <div className="btns">
+
+                                    <div>
+                                        <Icon type="search" className='announceIcon'/>
+                                        <span>存款</span>
+                                    </div>
+                                    <div>
+                                        <Icon type="search" className='announceIcon'/>
+                                        <span>提款</span>
+                                    </div>
+                                    <div>
+                                        <Icon type="search" className='announceIcon'/>
+                                        <span>转账</span>
+                                    </div>
+
+                                </div>
 
                             </div>
 
-                            <div className="btns">
+                        </div>
 
-                                <div>
-                                    <Icon type="search" className='announceIcon'/>
-                                    <span>存款</span>
-                                </div>
-                                <div>
-                                    <Icon type="search" className='announceIcon'/>
-                                    <span>提款</span>
-                                </div>
-                                <div>
-                                    <Icon type="search" className='announceIcon'/>
-                                    <span>转账</span>
-                                </div>
+                    </div>
 
-                            </div>
+
+                    {/*我的收藏*/}
+
+                    <div className="collection">
+
+                        <div className="title">
+                            <span>我的收藏</span>
+
+                            <span className='right'>
+                                <i className='icon' />
+                                添加收藏
+                            </span>
+                        </div>
+
+                        <div className='content'>
+
+                            <ul>
+
+                                <li className="game"><Link to='./lottery'><img src={txffc} alt=""/><p>腾讯时时彩</p></Link></li>
+
+                                <li className="game"><img src={tx5fc} alt=""/><p>腾讯时时彩</p></li>
+
+                                <li className="game"><img src={cqssc} alt=""/><p>腾讯时时彩</p></li>
+
+                                <li className="game"><img src={ahk3} alt=""/><p>腾讯时时彩</p></li>
+
+                                <li className="game"><img src={cqssc} alt=""/><p>腾讯时时彩</p></li>
+
+                                <li className="game"><img src={tx5fc} alt=""/><p>腾讯时时彩</p></li>
+
+                                <li className="game"><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+
+                            </ul>
 
                         </div>
 
                     </div>
 
-                </div>
+
+                    {/*精选推荐*/}
+
+                    <div className="recommend">
+
+                        <div className="title">
+                            <span>精选推荐</span>
+
+                            <span className='right'>多彩人生 · 一触即发</span>
+                        </div>
+
+                        <div className='content'>
+
+                            <ul>
 
 
-                {/*我的收藏*/}
+                                <li className="game">
+                                    <img src={txffc} alt=""/>
+                                    <p className='name'>腾讯时时彩</p>
+                                    <p className='time'>00:00:28</p>
+                                </li>
 
-                <div className="collection">
+                                <li className="game">
+                                    <img src={txffc} alt=""/>
+                                    <p className='name'>腾讯时时彩</p>
+                                    <p className='time'>00:00:28</p>
+                                </li>
 
-                    <div className="title">
-                        <span>我的收藏</span>
+                                <li className="game">
+                                    <img src={txffc} alt=""/>
+                                    <p className='name'>腾讯时时彩</p>
+                                    <p className='time'>00:00:28</p>
+                                </li>
 
-                        <span className='right'>
-                            <i className='icon' />
-                            添加收藏
-                        </span>
-                    </div>
+                                <li className="game">
+                                    <img src={txffc} alt=""/>
+                                    <p className='name'>腾讯时时彩</p>
+                                    <p className='time'>00:00:28</p>
+                                </li>
 
-                    <div className='content'>
+                                <li className="game">
+                                    <img src={txffc} alt=""/>
+                                    <p className='name'>腾讯时时彩</p>
+                                    <p className='time'>00:00:28</p>
+                                </li>
 
-                        <ul>
+                            </ul>
 
-                            <li className="game"><Link to='./lottery'><img src={txffc} alt=""/><p>腾讯时时彩</p></Link></li>
-
-                            <li className="game"><img src={tx5fc} alt=""/><p>腾讯时时彩</p></li>
-
-                            <li className="game"><img src={cqssc} alt=""/><p>腾讯时时彩</p></li>
-
-                            <li className="game"><img src={ahk3} alt=""/><p>腾讯时时彩</p></li>
-
-                            <li className="game"><img src={cqssc} alt=""/><p>腾讯时时彩</p></li>
-
-                            <li className="game"><img src={tx5fc} alt=""/><p>腾讯时时彩</p></li>
-
-                            <li className="game"><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-
-
-                {/*精选推荐*/}
-
-                <div className="recommend">
-
-                    <div className="title">
-                        <span>精选推荐</span>
-
-                        <span className='right'>多彩人生 · 一触即发</span>
-                    </div>
-
-                    <div className='content'>
-
-                        <ul>
-
-
-                            <li className="game">
-                                <img src={txffc} alt=""/>
-                                <p className='name'>腾讯时时彩</p>
-                                <p className='time'>00:00:28</p>
-                            </li>
-
-                            <li className="game">
-                                <img src={txffc} alt=""/>
-                                <p className='name'>腾讯时时彩</p>
-                                <p className='time'>00:00:28</p>
-                            </li>
-
-                            <li className="game">
-                                <img src={txffc} alt=""/>
-                                <p className='name'>腾讯时时彩</p>
-                                <p className='time'>00:00:28</p>
-                            </li>
-
-                            <li className="game">
-                                <img src={txffc} alt=""/>
-                                <p className='name'>腾讯时时彩</p>
-                                <p className='time'>00:00:28</p>
-                            </li>
-
-                            <li className="game">
-                                <img src={txffc} alt=""/>
-                                <p className='name'>腾讯时时彩</p>
-                                <p className='time'>00:00:28</p>
-                            </li>
-
-                        </ul>
+                        </div>
 
                     </div>
 
-                </div>
+
+                    {/*游戏列表*/}
+
+                    <div className='gameList'>
+                        <Tabs tabs={tabs}
+                              initialPage={0}
+                              onChange={(tab, index) => { console.log('onChange', index, tab); }}
+                              onTabClick={(tab, index) => { console.log('onTabClick', index, tab); }}
+                        >
+                            <ul className="box">
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                            </ul>
+
+                            <ul className="box">
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                            </ul>
+
+                            <ul className="box">
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                            </ul>
+
+                            <ul className="box">
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                            </ul>
+
+                            <ul className="box">
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                            </ul>
+
+                            <ul className="box">
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                                <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
+                            </ul>
+                        </Tabs>
+                    </div>
+                 </div>
 
 
-                {/*游戏列表*/}
-
-                <div className='gameList'>
-                    <Tabs tabs={tabs}
-                          initialPage={0}
-                          onChange={(tab, index) => { console.log('onChange', index, tab); }}
-                          onTabClick={(tab, index) => { console.log('onTabClick', index, tab); }}
-                    >
-                        <ul className="box">
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                        </ul>
-
-                        <ul className="box">
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                        </ul>
-
-                        <ul className="box">
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                        </ul>
-
-                        <ul className="box">
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                        </ul>
-
-                        <ul className="box">
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                        </ul>
-
-                        <ul className="box">
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                            <li><img src={txffc} alt=""/><p>腾讯时时彩</p></li>
-                        </ul>
-                    </Tabs>
-                </div>
-
-
-
-                </Drawer>
 
             </div>
         );

@@ -55,3 +55,14 @@ body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, d
 *::-webkit-scrollbar{
     display: none;
 }
+
+.am-navbar{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.contentBox{
+    margin-top: 45px;
+}
