@@ -1,14 +1,48 @@
 import React, {Component} from 'react';
-import {Drawer, Icon, NavBar, SegmentedControl, Slider} from "antd-mobile";
+import {Drawer, Icon, NavBar, SegmentedControl, Slider ,Modal ,Tabs, Badge} from "antd-mobile";
+import {Link} from 'react-router-dom';
 import SideGameList from "../common/sideGameList";
-
 import './Lottery.scss'
-
-
 import cqssc from "../../assets/img/cplogo/cqssc.png";
+import Gameselection from "./Gameselection";
+
+
+
+function closest(el, selector) {
+    const matchesSelector = el.matches || el.webkitMatchesSelector || el.mozMatchesSelector || el.msMatchesSelector;
+    while (el) {
+        if (matchesSelector.call(el, selector)) {
+            return el;
+        }
+        el = el.parentElement;
+    }
+    return null;
+}
+
+
 
 class Lottery extends Component {
 
+
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            modal1: false,
+            modal2: false,
+        };
+    }
+    showModal = key => (e) => {
+        e.preventDefault(); // 修复 Android 上点击穿透
+        this.setState({
+            [key]: true,
+        });
+    }
+    onClose = key => () => {
+        this.setState({
+            [key]: false,
+        });
+    }
 
 
     state = {
@@ -52,7 +86,10 @@ class Lottery extends Component {
 
                 <Drawer
                     className="navSideBar"
-                    style={{ minHeight: document.documentElement.clientHeight,width:document.documentElement.clientWidth}}
+                    style={{
+                        minHeight: document.documentElement.clientHeight,
+                        width:document.documentElement.clientWidth
+                    }}
                     enableDragHandle={false}
                     sidebar={sidebar}
                     open={this.state.open}
@@ -118,89 +155,6 @@ class Lottery extends Component {
 
 
 
-                        {/*下拉最近开奖*/}
-
-
-                        {/*<Accordion className="my-accordion" onChange={this.onChange}>*/}
-                        {/*    <Accordion.Panel header="近期开奖">*/}
-                        {/*        <List className="my-list">*/}
-                        {/*            <List.Item className='title'>*/}
-                        {/*                <Flex>*/}
-                        {/*                    <Flex.Item>期号</Flex.Item>*/}
-                        {/*                    <Flex.Item>开奖号码</Flex.Item>*/}
-                        {/*                    <Flex.Item>大小单双</Flex.Item>*/}
-                        {/*                    <Flex.Item>龙虎</Flex.Item>*/}
-                        {/*                </Flex>*/}
-                        {/*            </List.Item>*/}
-                        {/*            <List.Item>*/}
-                        {/*                <Flex>*/}
-                        {/*                    <Flex.Item>1088</Flex.Item>*/}
-                        {/*                    <Flex.Item className='nub'>51028</Flex.Item>*/}
-                        {/*                    <Flex.Item>大 / 双</Flex.Item>*/}
-                        {/*                    <Flex.Item>龙</Flex.Item>*/}
-                        {/*                </Flex>*/}
-                        {/*            </List.Item>*/}
-                        {/*            <List.Item>*/}
-                        {/*                <Flex>*/}
-                        {/*                    <Flex.Item>1088</Flex.Item>*/}
-                        {/*                    <Flex.Item className='nub'>51028</Flex.Item>*/}
-                        {/*                    <Flex.Item>大 / 双</Flex.Item>*/}
-                        {/*                    <Flex.Item>龙</Flex.Item>*/}
-                        {/*                </Flex>*/}
-                        {/*            </List.Item>*/}
-                        {/*            <List.Item>*/}
-                        {/*                <Flex>*/}
-                        {/*                    <Flex.Item>1088</Flex.Item>*/}
-                        {/*                    <Flex.Item className='nub'>51028</Flex.Item>*/}
-                        {/*                    <Flex.Item>大 / 双</Flex.Item>*/}
-                        {/*                    <Flex.Item>龙</Flex.Item>*/}
-                        {/*                </Flex>*/}
-                        {/*            </List.Item>*/}
-                        {/*            <List.Item>*/}
-                        {/*                <Flex>*/}
-                        {/*                    <Flex.Item>1088</Flex.Item>*/}
-                        {/*                    <Flex.Item className='nub'>51028</Flex.Item>*/}
-                        {/*                    <Flex.Item>大 / 双</Flex.Item>*/}
-                        {/*                    <Flex.Item>龙</Flex.Item>*/}
-                        {/*                </Flex>*/}
-                        {/*            </List.Item>*/}
-                        {/*            <List.Item>*/}
-                        {/*                <Flex>*/}
-                        {/*                    <Flex.Item>1088</Flex.Item>*/}
-                        {/*                    <Flex.Item className='nub'>51028</Flex.Item>*/}
-                        {/*                    <Flex.Item>大 / 双</Flex.Item>*/}
-                        {/*                    <Flex.Item>龙</Flex.Item>*/}
-                        {/*                </Flex>*/}
-                        {/*            </List.Item>*/}
-                        {/*            <List.Item>*/}
-                        {/*                <Flex>*/}
-                        {/*                    <Flex.Item>1088</Flex.Item>*/}
-                        {/*                    <Flex.Item className='nub'>51028</Flex.Item>*/}
-                        {/*                    <Flex.Item>大 / 双</Flex.Item>*/}
-                        {/*                    <Flex.Item>龙</Flex.Item>*/}
-                        {/*                </Flex>*/}
-                        {/*            </List.Item>*/}
-                        {/*            <List.Item>*/}
-                        {/*                <Flex>*/}
-                        {/*                    <Flex.Item>1088</Flex.Item>*/}
-                        {/*                    <Flex.Item className='nub'>51028</Flex.Item>*/}
-                        {/*                    <Flex.Item>大 / 双</Flex.Item>*/}
-                        {/*                    <Flex.Item>龙</Flex.Item>*/}
-                        {/*                </Flex>*/}
-                        {/*            </List.Item>*/}
-                        {/*            <List.Item>*/}
-                        {/*                <Flex>*/}
-                        {/*                    <Flex.Item>1088</Flex.Item>*/}
-                        {/*                    <Flex.Item className='nub'>51028</Flex.Item>*/}
-                        {/*                    <Flex.Item>大 / 双</Flex.Item>*/}
-                        {/*                    <Flex.Item>龙</Flex.Item>*/}
-                        {/*                </Flex>*/}
-                        {/*            </List.Item>*/}
-                        {/*        </List>*/}
-                        {/*    </Accordion.Panel>*/}
-                        {/*</Accordion>*/}
-
-
                         {/*玩法选择、添加按钮*/}
 
                         <div className="gameSelectionBox">
@@ -217,7 +171,7 @@ class Lottery extends Component {
                             </div>
 
                             <div className="addBtn">
-                                <span></span>
+                                <span onClick={this.showModal('modal2')}></span>
                             </div>
 
                         </div>
@@ -562,6 +516,17 @@ class Lottery extends Component {
                     </div>
 
                 </Drawer>
+
+
+                <Modal
+                    popup
+                    visible={this.state.modal2}
+                    onClose={this.onClose('modal2')}
+                    animationType="slide-up"
+                    closable={true}
+                >
+                    <Gameselection/>
+                </Modal>
 
             </div>
         );

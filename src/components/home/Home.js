@@ -69,7 +69,7 @@ class Home extends Component {
                     open={this.state.open}
                     onOpenChange={this.onOpenChange}
                     position={'right'}
-                />
+                >
 
                     <NavBar
                         mode="light"
@@ -334,6 +334,8 @@ class Home extends Component {
                  </div>
 
 
+
+                </Drawer>
 
             </div>
         );

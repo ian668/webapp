@@ -1,5 +1,7 @@
-.lotteryPage{
+//投注页面
 
+
+.lotteryPage{
 
   .cpLogo{
     width: 30px;
@@ -562,3 +564,96 @@
     }
   }
 }
+
+.am-modal-close{
+  top: 15px;
+}
+
+
+//玩法选择页面
+
+.gameSelectionPage{
+  background: #fff;
+  position: relative;
+  text-align: left;
+
+  .boxTitle{
+    line-height: 50px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    padding: 0 15px;
+    border-bottom: 0.5px solid #eee;
+  }
+
+
+  .left{
+    overflow: auto;
+    text-align: left;
+    display: inline-block;
+    border-right:0.5px solid #eee;
+
+    ul{
+      width: 100px;
+      display: inline-block;
+
+      li{line-height: 44px;
+        border-right: 2px solid #fff;
+        font-size: 13px;
+        text-align: center;
+      }
+        
+      li.active{
+        border-color: #ea4040;
+        color: #ea4040;
+      }
+    }
+  }
+
+
+  .right{
+    position: absolute;
+    top: 50.5px;
+    right: 0;
+    overflow: auto;
+
+    .gameType{
+
+      .title{
+        font-size: 13px;
+        line-height: 32px;
+        padding-left: 15px;
+        background: #f9f9f9;
+        color: #333;
+      }
+
+      ul{
+        padding: 10px 10px 15px;
+
+        li{
+          display: inline-block;
+          font-size: 13px;
+          border: 0.5px solid #ddd;
+          border-radius: 16px;
+          line-height: 30px;
+          margin: 3px;
+          padding: 0 20px;
+          color: #333;
+        }
+
+        li.active{
+          border-color: #ea4040;
+          color: #ea4040;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
