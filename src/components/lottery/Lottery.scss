@@ -991,7 +991,7 @@
       }
 
       .am-checkbox-wrapper{
-        margin-left: 10px;
+        margin-left: 8px;
 
         .am-checkbox{
           margin-right: 5px;
@@ -1031,6 +1031,24 @@
   }
 }
 
+
+//玩法说明弹窗
+
+
+.gameDescriptionBox{
+
+  .am-modal-title{
+    font-size: 16px;
+  }
+
+  .am-modal-body{
+    font-size: 13px;
+  }
+
+  .am-modal-button{
+    font-size: 16px;
+  }
+}
 
 
 

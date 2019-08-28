@@ -7,7 +7,7 @@ import './Home.scss';
 import SideGameList from '../common/sideGameList';
 
 import logo from "../../assets/img/logo.png";
-
+import banner1 from "../../assets/img/banner.jpg";
 import txffc from "../../assets/img/cplogo/txffc.png";
 import tx5fc from "../../assets/img/cplogo/tx5fc.png";
 import cqssc from "../../assets/img/cplogo/cqssc.png";
@@ -98,23 +98,7 @@ class Home extends Component {
                                 beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
                                 afterChange={index => console.log('slide to', index)}
                             >
-                                {this.state.data.map((val,index) => (
-                                    <a
-                                        key={index}
-                                        style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
-                                    >
-                                        <img
-                                            src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
-                                            alt=""
-                                            style={{ width: '100%', verticalAlign: 'top' }}
-                                            onLoad={() => {
-                                                // fire window resize event to change height
-                                                window.dispatchEvent(new Event('resize'));
-                                                this.setState({ imgHeight: 'auto' });
-                                            }}
-                                        />
-                                    </a>
-                                ))}
+                                <img src={banner1} alt=""/>
                             </Carousel>
                         </WingBlank>
 

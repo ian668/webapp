@@ -21,7 +21,7 @@ class Carts extends Component {
                     </div>
 
                     <div className="btns">
-                        <Button type="primary" inline size="small" style={{ marginRight: '4px' }}>继续选号</Button>
+                        <Button type="primary" onClick={()=>{this.props.history.push('/lottery')}} inline size="small" style={{ marginRight: '4px' }}>继续选号</Button>
                         <Button type="primary" onClick={()=>{this.props.history.push('/trace')}} inline size="small" style={{ marginRight: '4px' }}>快速追号</Button>
                     </div>
 
