@@ -445,7 +445,7 @@
       bottom: 0;
       width: 100%;
       background: #fff;
-      box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
 
       .payment{
         line-height: 30px;
@@ -506,6 +506,7 @@
               color: #666;
               margin-top: 3px;
               transform: scale(.95);
+              display: block;
             }
 
             span{
@@ -650,6 +651,385 @@
   }
 }
 
+
+//
+
+
+.cartsPage{
+
+  .contentBox{
+    margin-bottom: 130px;
+
+    .time{
+      background: #fff;
+      line-height: 40px;
+      padding: 0 15px;
+      text-align: center;
+      background: #f9f9f9;
+
+      p{
+        font-size: 13px;
+        color: #333;
+
+        span{
+          margin: 0 5px;
+        }
+
+        .lastTime{
+          color: #ea4040;
+        }
+      }
+    }
+
+    .btns{
+      text-align: center;
+      background: #fff;
+      padding:  10px 15px 15px;
+
+      .am-button-small{
+        line-height: 34px;
+        height: 34px;
+        padding: 0 30px;
+        font-size: 13px;
+        margin: 0 5px;
+        -webkit-border-radius: 18px;
+        -moz-border-radius: 18px;
+        border-radius: 18px;
+      }
+    }
+
+    .cartContents{
+      font-size: 13px;
+      margin-top: 10px;
+
+      .am-swipe{
+        margin-bottom: 10px;
+      }
+
+      .am-list-item{
+        min-height: 40px;
+      }
+
+      .am-swipe-btn-text{
+        padding: 0 25px;
+      }
+
+      .am-list-content{
+        font-size: 12px;
+        color: #666;
+        line-height: 30px;
+      }
+
+      .left{
+        display: inline-block;
+
+        span{
+          margin-right: 5px;
+        }
+      }
+
+      .right{
+        float: right;
+
+        .Btns{
+          background: #f5f5f5;
+          border-radius: 3px;
+          overflow: hidden;
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 8px;
+
+          input{
+            text-align: center;
+            width: 45px;
+            background: #f9f9f9;
+            border: none;
+            height: 30px;
+            -webkit-user-select: auto;
+          }
+
+          span{
+            color: #333;
+            width: 28px;
+            height: 30px;
+            line-height: 30px;
+            display: inline-block;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.03);
+          }
+        }
+
+        .unit{
+          margin-left: 5px;
+        }
+
+        .nub{
+          color: #ea4040;
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+
+  .betFooter{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+
+    .payment{
+      line-height: 30px;
+      font-size: 12px;
+      padding: 2px 15px;
+
+      .left{
+        display: inline-block;
+
+        .btn{
+          color: #333;
+          margin-left: 10px;
+          background: #f5f5f5;
+          padding: 3px 5px;
+          border-radius: 3px;
+        }
+      }
+
+      .right{
+        float: right;
+      }
+
+      .nub{
+        color: #ea4040;
+        padding: 0 5px;
+      }
+    }
+
+    .betBtns{
+      box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+      border-top: 0.5px solid #eee;
+      padding: 10px 15px;
+      position: relative;
+
+      .btn{
+        display: inline-block;
+        line-height: 40px;
+        background: linear-gradient(45deg, #da3939, #f55b5b);
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        text-align: center;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 13px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+
+//追号页面
+
+.tracePage{
+
+  .contentBox {
+    margin-bottom: 130px;
+
+    .time{
+      background: #fff;
+      line-height: 40px;
+      padding: 0 15px;
+      text-align: center;
+      background: #f9f9f9;
+
+      p{
+        font-size: 13px;
+        color: #333;
+
+        span{
+          margin: 0 5px;
+        }
+
+        .lastTime{
+          color: #ea4040;
+        }
+      }
+    }
+
+    .setBox{
+      background: #fff;
+      padding: 7px 15px;
+      margin-bottom: 10px;
+
+      .set{
+        font-size: 12px;
+        margin: 3px 0;
+        display: inline-block;
+
+
+        div{
+          display: inline-block;
+          margin-right: 15px;
+          line-height: 30px;
+
+          input{
+            background: #f5f5f5;
+            width: 60px;
+            border: none;
+            height: 30px;
+            margin: 0 8px;
+            text-align: center;
+            border-radius: 3px;
+            -webkit-user-select: auto;
+          }
+
+          span{
+            line-height: 22px;
+            width: 22px;
+            border: 1px solid #eee;
+            display: inline-block;
+            text-align: center;
+            margin-left: 5px;
+            border-radius: 3px;
+          }
+
+          span.active{
+            color: #ea4040;
+            border-color: #ea4040;
+          }
+        }
+      }
+    }
+
+    .am-tabs-tab-bar-wrap{
+      z-index: 0;
+    }
+
+    .listContent{
+      font-size: 13px;
+      margin: 5px 0;
+
+      .am-checkbox-wrapper{
+        position: absolute;
+        right: 15px;
+        top: 43px;
+      }
+
+      div{
+        padding: 4px 0;
+        color: #333;
+
+        .money{
+          color: #ea4040;
+        }
+
+        .nub{
+          min-width: 18px;
+          height: 18px;
+          text-align: center;
+          font-size: 12px;
+          display: inline-block;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          background: #ea4040;
+          vertical-align: top;
+          transform: scale(0.8);
+          color: #fff;
+        }
+
+        span{
+          margin: 0 8px;
+        }
+
+        input{
+          background: #f5f5f5;
+          width: 60px;
+          border: none;
+          height: 30px;
+          margin: 0 8px;
+          text-align: center;
+          border-radius: 3px;
+          -webkit-user-select: auto;
+        }
+      }
+    }
+  }
+
+  .betFooter{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+
+    .payment{
+      line-height: 30px;
+      font-size: 12px;
+      padding: 2px 15px;
+
+      .left{
+        display: inline-block;
+
+        .btn{
+          color: #333;
+          margin-left: 10px;
+          background: #f5f5f5;
+          padding: 3px 5px;
+          border-radius: 3px;
+        }
+      }
+
+      .right{
+        float: right;
+      }
+
+      .nub{
+        color: #ea4040;
+        padding: 0 5px;
+      }
+
+      .am-checkbox-wrapper{
+        margin-left: 10px;
+
+        .am-checkbox{
+          margin-right: 5px;
+
+          .am-checkbox-inner{
+            width: 18px;
+            height: 18px;
+          }
+
+          .am-checkbox-inner::after{
+            right: 5px;
+            height: 9px;
+          }
+        }
+      }
+    }
+
+    .betBtns{
+      box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+      border-top: 0.5px solid #eee;
+      padding: 10px 15px;
+      position: relative;
+
+      .btn{
+        display: inline-block;
+        line-height: 40px;
+        background: linear-gradient(45deg, #da3939, #f55b5b);
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        text-align: center;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 13px;
+        width: 100%;
+      }
+    }
+  }
+}
 
 
 

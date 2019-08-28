@@ -493,13 +493,15 @@ class Lottery extends Component {
 
                                     </div>
 
-                                    <div className="btn">
+                                    <Link to='./carts' className='name'>
+                                        <div className="btn">
 
-                                        <span>2</span>
-                                        <p className='icon'> </p>
-                                        <p className='name'>购彩蓝</p>
+                                            <span>2</span>
+                                            <p className='icon'> </p>
+                                            <p className='name'>购彩蓝</p>
 
-                                    </div>
+                                        </div>
+                                    </Link>
 
                                 </div>
 
