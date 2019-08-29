@@ -5,9 +5,6 @@ import SideGameList from "../common/sideGameList";
 import './Lottery.scss'
 import cqssc from "../../assets/img/cplogo/cqssc.png";
 import Gameselection from "./Gameselection";
-
-
-
 function closest(el, selector) {
     const matchesSelector = el.matches || el.webkitMatchesSelector || el.mozMatchesSelector || el.msMatchesSelector;
     while (el) {
@@ -118,7 +115,7 @@ class Lottery extends Component {
                         leftContent={<Icon type="left"/>}
                         rightContent={[
 
-                            <img src={cqssc} alt="" onClick={this.onOpenChange} className='cpLogo'/>
+                            <img src={cqssc} alt="" key="0" onClick={this.onOpenChange} className='cpLogo'/>
                         ]}
                     >
 
