@@ -18,7 +18,7 @@ class Trace extends Component {
                     icon={<Icon type="left" />}
                     onLeftClick={() => console.log('onLeftClick')}
                     rightContent={<span>生成追号</span> }
-                >购彩蓝</NavBar>
+                >追号</NavBar>
 
                 <div className="contentBox">
 
