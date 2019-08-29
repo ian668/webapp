@@ -13,7 +13,8 @@ const Routes = () => {
     return (
         <Router>
             <Switch>
-                <Route exact path="/" component={Home} />
+                <Route exact path="/" component={Login} />
+                <Route exact path="/home" component={Home} />
                 <Route exact path="/lottery" component={Lottery} />
                 <Route exact path="/gameselection" component={Gameselection} />
                 <Route exact path="/carts" component={Carts} />
