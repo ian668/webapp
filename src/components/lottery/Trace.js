@@ -42,7 +42,7 @@ class Trace extends Component {
 
                             <List.Item>
                                 <div className='listContent'>
-                                    <Checkbox></Checkbox>
+                                    <Checkbox defaultChecked={true}></Checkbox>
                                     <div>期号<span>20190802123</span>期<span className='nub'>1</span></div>
                                     <div>截止时间:<span>2019-08-22 12:12:36</span></div>
                                     <div>倍数:<input type="text" placeholder={'1'}/>倍，金额:<span className='money'>8.00</span>元</div>
@@ -51,7 +51,7 @@ class Trace extends Component {
 
                             <List.Item>
                                 <div className='listContent'>
-                                    <Checkbox></Checkbox>
+                                    <Checkbox defaultChecked={true}></Checkbox>
                                     <div>期号<span>20190802123</span>期<span className='nub'>2</span></div>
                                     <div>截止时间:<span>2019-08-22 12:12:36</span></div>
                                     <div>倍数:<input type="text" placeholder={'1'}/>倍，金额:<span className='money'>8.00</span>元</div>
@@ -109,9 +109,11 @@ class Trace extends Component {
 
                         <div className="left">
 
-                            <span>总注数:</span>
-                            <span className='nub'>20</span>
-                            <span>注</span>
+                            <span>共</span>
+                            <span className='nub'>10</span>
+                            <span>期,</span>
+                            <span className='nub'>80.00</span>
+                            <span>元</span>
 
                             <Checkbox>中奖停追</Checkbox>
 

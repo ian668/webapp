@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Drawer, Icon, NavBar, SegmentedControl, Slider ,Modal ,Tabs, Badge} from "antd-mobile";
+import {Drawer, Icon, NavBar, SegmentedControl, Slider ,Modal} from "antd-mobile";
 import {Link} from 'react-router-dom';
 import SideGameList from "../common/sideGameList";
 import './Lottery.scss'
@@ -69,6 +69,19 @@ class Lottery extends Component {
             console.log(`${name}: ${value}`);
         };
     }
+
+
+    onWrapTouchStart = (e) => {
+        // fix touch to scroll background page on iOS
+        if (!/iPhone|iPod|iPad/i.test(navigator.userAgent)) {
+            return;
+        }
+        const pNode = closest(e.target, '.am-modal-content');
+        if (!pNode) {
+            e.preventDefault();
+        }
+    }
+
 
     render() {
 
@@ -178,7 +191,7 @@ class Lottery extends Component {
                         {/*玩法说明、奖金*/}
                         <div className="gameDescription">
 
-                            <div className="left">
+                            <div className="left" onClick={this.showModal('modal1')}>
 
                                 <span className='icon'> </span>
                                 <span className='title'>玩法说明</span>
@@ -525,6 +538,22 @@ class Lottery extends Component {
                     closable={true}
                 >
                     <Gameselection/>
+                </Modal>
+
+
+
+                <Modal
+                    visible={this.state.modal1}
+                    transparent
+                    onClose={this.onClose('modal1')}
+                    className={'gameDescriptionBox'}
+                    title="五星直选复式"
+                    footer={[{ text: '确定', onPress: () => { console.log('ok'); this.onClose('modal1')(); } }]}
+                    wrapProps={{ onTouchStart: this.onWrapTouchStart }}
+                >
+                    <div>
+                        <p>从十位、个位中选择一个2位数号码组成一注，所选号码与开奖号码的十位、个位相同，且顺序一致，即为中奖。</p>
+                    </div>
                 </Modal>
 
             </div>
