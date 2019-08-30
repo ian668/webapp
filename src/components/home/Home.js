@@ -75,7 +75,7 @@ class Home extends Component {
                         mode="light"
                         leftContent={<img src={logo} alt="" className='logo'/>}
                         rightContent={[
-                            <Icon key="0" type="search" style={{ marginRight: '16px' }} />,
+                            <Icon key="0" type="search" style={{ marginRight: '16px' }} onClick={()=>{this.props.history.push('/member')}}/>,
                             <Icon key="1" type="ellipsis" onClick={this.onOpenChange}/>,
                         ]}
                     />
@@ -154,7 +154,7 @@ class Home extends Component {
 
                                     <div>
                                         <Icon type="search" className='announceIcon'/>
-                                        <span>存款</span>
+                                        <span>充值</span>
                                     </div>
                                     <div>
                                         <Icon type="search" className='announceIcon'/>

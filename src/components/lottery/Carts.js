@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Icon, NavBar, Button ,List ,SwipeAction} from "antd-mobile";
-import {Link} from "react-router-dom";
 
 class Carts extends Component {
     render() {

@@ -7,6 +7,8 @@ import Carts from "./components/lottery/Carts";
 import Trace from "./components/lottery/Trace";
 import Login from "./components/login/Login";
 import Registered from "./components/login/Registered";
+import Member from "./components/Member/Member";
+import Charge from "./components/Fund/Charge";
 
 
 const Routes = () => {
@@ -21,6 +23,8 @@ const Routes = () => {
                 <Route exact path="/trace" component={Trace} />
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/registered" component={Registered} />
+                <Route exact path="/member" component={Member} />
+                <Route exact path="/charge" component={Charge} />
             </Switch>
         </Router>
     );
