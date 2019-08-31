@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Fund.scss';
-import {Icon, NavBar, InputItem ,List, Picker } from "antd-mobile";
+import {Icon, NavBar, InputItem ,List, Picker ,Button } from "antd-mobile";
 
 
 const colorStyle = {
@@ -44,7 +44,7 @@ class Charge extends Component {
 
                     <div className="listItem">
 
-                        <List renderFooter={() => '单笔充值金额:100 - 10000元'}>
+                        <List>
 
                             <Picker
                                 data={banks}
@@ -59,6 +59,31 @@ class Charge extends Component {
                             >充值金额</InputItem>
 
                         </List>
+
+                        <div className="fastBtn">
+
+                            <p>便捷充值金额</p>
+
+                            <ul>
+
+                                <li><span>100</span></li>
+                                <li><span>200</span></li>
+                                <li><span>500</span></li>
+                                <li><span>1000</span></li>
+                                <li><span>2000</span></li>
+                                <li><span>3000</span></li>
+                                <li><span>5000</span></li>
+                                <li><span>10000</span></li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div className="bottonBtn">
+
+                        <Button type="primary">充值</Button>
 
                     </div>
 
