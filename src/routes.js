@@ -9,6 +9,8 @@ import Login from "./components/login/Login";
 import Registered from "./components/login/Registered";
 import Member from "./components/Member/Member";
 import Charge from "./components/Fund/Charge";
+import Withdraw from "./components/Fund/Withdraw";
+import Transfer from "./components/Fund/Transfer";
 
 
 const Routes = () => {
@@ -25,6 +27,8 @@ const Routes = () => {
                 <Route exact path="/registered" component={Registered} />
                 <Route exact path="/member" component={Member} />
                 <Route exact path="/charge" component={Charge} />
+                <Route exact path="/withdraw" component={Withdraw} />
+                <Route exact path="/transfer" component={Transfer} />
             </Switch>
         </Router>
     );

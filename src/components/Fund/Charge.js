@@ -32,7 +32,7 @@ class Charge extends Component {
 
 
         return (
-            <div className='chargePage'>
+            <div className='chargePage from'>
 
                 <NavBar
                     mode="light"

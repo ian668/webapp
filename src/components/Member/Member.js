@@ -104,29 +104,17 @@ class Member extends Component {
                     <div className="box">
 
                         <Item
-                            thumb="https://zos.alipayobjects.com/rmsportal/dNuvNrtqUztHCwM.png"
-                            arrow="horizontal"
-                            onClick={() => {}}
-                        >银行卡管理</Item>
-                        <Item
                             thumb="https://zos.alipayobjects.com/rmsportal/UmbJMbWOejVOpxe.png"
                             onClick={() => {}}
                             arrow="horizontal"
                         >
-                            账户安全
+                            账户设置
                         </Item>
                         <Item
                             thumb="https://zos.alipayobjects.com/rmsportal/dNuvNrtqUztHCwM.png"
                             arrow="horizontal"
                             onClick={() => {}}
-                        >平台公告</Item>
-                        <Item
-                            thumb="https://zos.alipayobjects.com/rmsportal/UmbJMbWOejVOpxe.png"
-                            onClick={() => {}}
-                            arrow="horizontal"
-                        >
-                            站内信
-                        </Item>
+                        >消息中心</Item>
 
                     </div>
 

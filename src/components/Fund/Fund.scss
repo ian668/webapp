@@ -1,17 +1,5 @@
 .chargePage{
 
-  .listItem{
-    padding-top: 10px;
-  }
-
-  .am-input-label , .am-list-content, .am-list-extra, .am-input-control input{
-    font-size: 14px!important;
-  }
-
-  .am-input-control input{
-    text-align: right;
-  }
-
   .fastBtn{
     padding: 15px 15px;
     background: #fff;
@@ -20,6 +8,7 @@
       border-bottom: 0.5px solid #ddd;
       padding-bottom: 15px;
       margin-bottom: 10px;
+      font-size: 14px;
     }
 
     li{
@@ -29,27 +18,13 @@
 
       span{
         background: #f9f9f9;
+        color: #333;
         display: block;
         margin: 4px;
         line-height: 32px;
         border-radius: 3px;
         font-size: 13px;
-        color: #333;
       }
-    }
-  }
-
-  .bottonBtn{
-    padding: 0 15px;
-    margin-top: 30px;
-
-    .am-button{
-      font-size: 15px;
-      height: 44px;
-      line-height: 44px;
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      border-radius: 4px;
     }
   }
 }

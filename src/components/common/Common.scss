@@ -49,3 +49,45 @@
     }
   }
 }
+
+
+//通用表单样式
+
+.from{
+
+  .listItem{
+    padding-top: 10px;
+
+    .am-input-label , .am-list-content, .am-list-extra, .am-input-control input{
+      font-size: 14px!important;
+    }
+
+    .am-input-control input{
+      text-align: right;
+    }
+  }
+
+  .bottonBtn{
+    padding: 0 15px;
+    margin-top: 30px;
+
+    .am-button{
+      font-size: 15px;
+      height: 44px;
+      line-height: 44px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      background: linear-gradient(45deg, #da3939, #f55b5b);
+    }
+
+    .am-button::before{
+      border: 0!important;
+    }
+  }
+
+  .am-list-footer, .am-list-header{
+    padding: 15px;
+    font-size: 12px;
+  }
+}
